@@ -9,6 +9,7 @@ Front end machine (here we configure haproxy) client machine/master machine :==>
 6) firewall-cmd --permanent --add-port=80/tcp  
 7) firewall-cmd --reload
 8) systemctl restart firewalld
+    sudo firewall-cmd --version (1.2.3)
 9) curl haproxy server private ip :80
 it will print output
 

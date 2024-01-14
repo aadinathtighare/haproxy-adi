@@ -1,7 +1,7 @@
 HAProxy is a powerful and flexible TCP/HTTP load balancer, and it can be used to distribute incoming traffic across
 multiple servers to ensure high availability and scalability.
 Front end machine (here we configure haproxy) client machine/master machine :==>>
-1) sudo yum install haproxy
+1) sudo yum install haproxy -y
 2) sudo nano /etc/haproxy/haproxy.cfg
 3) sudo systemctl start haproxy
 4) sudo systemctl enable haproxy

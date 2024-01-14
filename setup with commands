@@ -25,9 +25,12 @@ server1 & server2 (Backend servers/ slave machines) :==>>
     8)  vim index.html
     9)  curl 0.0.0.0
     10) sudo yum install firewalld -y
-    11) firewall-cmd --permanent --add-port=80/tcp  
-    12) firewall-cmd --reload
-    13) systemctl restart firewalld
+    11) sudo systemctl enable firewalld
+   12) sudo systemctl start firewalld
+   13) sudo systemctl status firewalld
+   14) firewall-cmd --permanent --add-port=80/tcp  
+    15) firewall-cmd --reload
+    16) systemctl restart firewalld
 
  -------------------------------------------------------------------------------------------
 

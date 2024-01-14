@@ -5,10 +5,11 @@ Front end machine (here we configure haproxy) client machine/master machine :==>
 2) sudo nano /etc/haproxy/haproxy.cfg
 3) sudo systemctl start haproxy
 4) sudo systemctl enable haproxy
-5) firewall-cmd --permanent --add-port=80/tcp  
-6) firewall-cmd --reload
-7) systemctl restart firewalld
-8) curl haproxy server private ip :80
+5) sudo yum install firewalld -y
+6) firewall-cmd --permanent --add-port=80/tcp  
+7) firewall-cmd --reload
+8) systemctl restart firewalld
+9) curl haproxy server private ip :80
 it will print output
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -23,9 +24,10 @@ server1 & server2 (Backend servers/ slave machines) :==>>
     7)   systemctl restart httpd
     8)  vim index.html
     9)  curl 0.0.0.0
-    10) firewall-cmd --permanent --add-port=80/tcp  
-    11) firewall-cmd --reload
-    12) systemctl restart firewalld
+    10) sudo yum install firewalld -y
+    11) firewall-cmd --permanent --add-port=80/tcp  
+    12) firewall-cmd --reload
+    13) systemctl restart firewalld
 
  -------------------------------------------------------------------------------------------
 

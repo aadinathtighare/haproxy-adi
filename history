@@ -1,0 +1,139 @@
+master (client) haproxy machine ==>>
+  1  ll
+    2  yum install haproxy -y
+    3  cd /etc/
+    4  ll
+    5  cd haproxy/
+    6  ll
+    7  nano haproxy.cfg
+    8  ll
+    9  haproxy -v
+   10  mkdir haproxy
+   11  cd haproxy/
+   12  ll
+   13  nano haproxy.conf
+   14  firewall-cmd --permanent --add-port=80/tcp
+   15  yum install firewall -y
+   16*
+   17  firewall-cmd --permanent --add-port=80/tcp
+   18  sudo systemctl enable firewalld
+   19  sudo systemctl start firewalld
+   20  sudo systemctl status firewalld
+   21  history
+   22  firewall-cmd --permanent --add-port=80/tcp
+   23  hostname -i
+   24  hostname
+   25  hostname -i
+   26  curl 172.31.88.46:80
+   27  haproxy -f haproxy.conf
+   28  vim haproxy.conf
+   29  haproxy -f haproxy.conf
+   30  vim haproxy.conf
+   31  haproxy -f haproxy.conf
+   32  systemctl restart haproxy.service
+   33  haproxy -f haproxy.conf
+   34  history
+   35  sudo firewall-cmd --reload
+   36  haproxy -f haproxy.conf
+   37  vim haproxy.conf
+   38  haproxy -f haproxy.conf
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  server/ slave machine ==>>>>
+  [root@ip-172-31-26-58 ~]# history
+    1  ll
+    2  cd /var/www/html/
+    3  vim index.html
+    4  systemctl restart httpd
+    5  vim index.html
+    6  curl 0.0.0.0
+    7  history
+    8  hostname -i
+    9  sudo yum install firewalld -y
+   10  sudo systemctl start firewalld
+   11  firewall-cmd --permanent --add-port=80/tcp
+   12   curl 172.31.88.46:80
+   13  systemctl restart httpd.service
+   14   curl 172.31.88.46:80
+   15*
+   16   systemctl enable httpd.service
+   17  sudo firewall-cmd --reload
+   18  vim index.html
+   19   curl 172.31.88.46:80
+   20   yum remove haproxy -y
+   21  haproxy -v
+   22  history
+   23  vim index.html
+   24   curl 172.31.88.46:80
+   25  vim index.html
+   26  history
+   27  cd
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[root@ip-172-31-26-58 html]# history
+    1  ll
+    2  cd /var/www/html/
+    3  vim index.html
+    4  systemctl restart httpd
+    5  vim index.html
+    6  curl 0.0.0.0
+    7  history
+    8  hostname -i
+    9  sudo yum install firewalld -y
+   10  sudo systemctl start firewalld
+   11  firewall-cmd --permanent --add-port=80/tcp
+   12   curl 172.31.88.46:80
+   13  systemctl restart httpd.service
+   14   curl 172.31.88.46:80
+   15*
+   16   systemctl enable httpd.service
+   17  sudo firewall-cmd --reload
+   18  vim index.html
+   19   curl 172.31.88.46:80
+   20   yum remove haproxy -y
+   21  haproxy -v
+   22  history
+   23  vim index.html
+   24   curl 172.31.88.46:80
+   25  vim index.html
+   26  history
+   27  cd
+   28  history
+   29  cd /var/www/html/
+   30  history
+[root@ip-172-31-26-58 html]#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  

@@ -22,7 +22,8 @@ server1 & server2 (Backend servers/ slave machines) :==>>
     5)  systemctl start httpd
     6)  vim index.html
     7)   systemctl restart httpd
-    8)  vim index.html
+         systemctl enable httpd.service
+     8)  vim index.html
     9)  curl 0.0.0.0
     10) sudo yum install firewalld -y
     11) sudo systemctl enable firewalld

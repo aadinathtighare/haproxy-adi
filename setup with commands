@@ -26,13 +26,16 @@ server1 & server2 (Backend servers/ slave machines) :==>>
          systemctl enable httpd.service
      8)  vim index.html
     9)  curl 0.0.0.0
-    10) sudo yum install firewalld -y
-    11) sudo systemctl enable firewalld
-   12) sudo systemctl start firewalld
-   13) sudo systemctl status firewalld
-   14) firewall-cmd --permanent --add-port=80/tcp  
-    15) firewall-cmd --reload
-    16) systemctl restart firewalld
+    10) curl haproxy server private ip :80 
+
+below are optional commands :==>>>>>>>
+    11) sudo yum install firewalld -y
+    12) sudo systemctl enable firewalld
+   13) sudo systemctl start firewalld
+   14) sudo systemctl status firewalld
+   15) firewall-cmd --permanent --add-port=80/tcp  
+    16) firewall-cmd --reload
+    17) systemctl restart firewalld
 
  -------------------------------------------------------------------------------------------
 
